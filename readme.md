@@ -6,7 +6,7 @@ August 28, 2016
 
 ### Description
 
-A Landing page for the band Visible Cloaks.
+A landing page for the band Visible Cloaks.
 
 ### Technologies Used
 

@@ -1,0 +1,74 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'Jean Luc';
+    src: url('../fonts/jeanlucweb-bold.otf');
+    font-weight: normal;
+}
+
+body {
+  overflow-x: hidden;
+  background: RoyalBlue;
+}
+
+h1, h2 {
+  font-family: 'Jean Luc';
+  color: #008060;
+}
+
+.visible {
+  font-size: 3em;
+  letter-spacing: .5em;
+  margin-left: 200px;
+}
+
+.visible:hover {
+  -ms-transform: skewX(45deg); /* IE 9 */
+  -webkit-transform: skewX(45deg); /* Safari */
+  transform: skewX(45deg);
+}
+
+.cloaks {
+  font-size: 8em;
+  letter-spacing: 0.5em;
+  margin-left: 5em;
+}
+
+.cloaks:hover {
+  -ms-transform: skewX(-45deg); /* IE 9 */
+    -webkit-transform: skewX(-45deg); /* Safari */
+    transform: skewX(-45deg);
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  color: #00b386;
+}
+
+.container {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 75%;
+  justify-content: center;
+}
+
+.video_link {
+  font-size: 10em;
+}
+
+.fa-soundcloud {
+  font-size: 10em;
+  color: red;
+}
