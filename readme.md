@@ -6,7 +6,7 @@ August 28, 2016
 
 ### Description
 
-TBD
+A Landing page for the band Visible Cloaks.
 
 ### Technologies Used
 
@@ -16,7 +16,7 @@ TBD
 * Font Awesome
 * Git
 
-##### License
+#### License
 
 *All rights reserved.*
 
