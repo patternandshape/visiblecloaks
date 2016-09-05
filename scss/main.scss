@@ -1,16 +1,12 @@
 html {
   box-sizing: border-box;
+  overflow-x: hidden; 
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-// @keyframes backgAnimation {
-//     0%{background-position:0% 90%}
-//     50%{background-position:100% 11%}
-//     100%{background-position:0% 90%}
-// }
 
 @font-face {
     font-family: 'Jean Luc';
@@ -22,45 +18,70 @@ body {
   background: RoyalBlue;
 }
 
+h3 {
+  font-family: 'Jean Luc';
+  color: blue;
+  font-size: 4em;
+  letter-spacing: 0.1em;
+  margin-bottom: 0;
+}
+
+.description {
+  font-family: 'Helvetica', sans-serif;
+  color: blue;
+  font-size: 1.1em;
+  text-align: justify;
+  max-width: 70%;
+  margin-bottom: 6em;
+}
+
 .container {
-  margin-top: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 75%;
-  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 4em;
+}
+
+.social-links {
   .fa-soundcloud {
     position: absolute;
-    margin-left: 8em;
     font-size: 5em;
     color: orange;
     &:hover {
     color: #00b386;
-  }
+    }
   }
   .fa-twitter {
     position: absolute;
-    margin: 8em 0 0 8em;
     font-size: 4em;
-    color: cyan;
-    // background: linear-gradient(50deg, #ff644d, #e63df5, #3dd0f5, #4dff82);
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
-    // animation: backgAnimation 70s ease infinite;
+    color: #00cccc;
+    &:hover {
+    color: #00b386;
+    } 
   }
-}
-
-h1, h2 {
-  font-family: 'Jean Luc';
-  color: blue;
-  &:hover {
-  color: #00b386;
+  .fa-envelope {
+    position: absolute;
+    font-size: 4em;
+    color: orangered;
+    &:hover {
+    color: #00b386;
+    }
+  }
+  .bandcamp {
+  position: absolute;
+  height: 50px;
   }
 }
 
 .visible {
+  font-family: 'Jean Luc';
+  color: blue;
   font-size: 3em;
+  text-align: center;
+  margin-left: -10em;
   letter-spacing: .5em;
+  margin-bottom: -0.5em;
   &:hover {
+  color: #00b386;
   -ms-transform: skewX(45deg);
   -webkit-transform: skewX(45deg);
   transform: skewX(45deg);
@@ -69,36 +90,39 @@ h1, h2 {
 
 
 .cloaks {
+  font-family: 'Jean Luc';
+  color: blue;
   font-size: 8em;
+  text-align: center;
   letter-spacing: 0.5em;
-  margin-left: 5em;
+  margin-left: 3em;
+  margin-bottom: 0.75em;
   &:hover {
+  color: #00b386;
   -ms-transform: skewX(-45deg);
   -webkit-transform: skewX(-45deg);
   transform: skewX(-45deg);
   }
 }
 
-a {
-  text-decoration: none;
-  color: blue;
-  &:hover {
-  color: #00b386;
-  }
+.divider {
+  margin:0 auto;
+  width: 80%;
+  background: white;
+  height: 5px;
 }
 
 .video-wrapper {
+  margin-top: 5em;
+  padding: 25px 0 56.25% 0;
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
   height: 0;
-}
-.video-wrapper object,
-.video-wrapper embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 

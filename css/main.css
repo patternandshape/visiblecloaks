@@ -1,5 +1,6 @@
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 *, *::before, *::after {
   box-sizing: inherit; }
@@ -11,67 +12,92 @@ html {
 body {
   background: RoyalBlue; }
 
-.container {
-  margin-top: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 75%;
-  justify-content: center; }
-  .container .fa-soundcloud {
-    position: absolute;
-    margin-left: 8em;
-    font-size: 5em;
-    color: orange; }
-    .container .fa-soundcloud:hover {
-      color: #00b386; }
-  .container .fa-twitter {
-    position: absolute;
-    margin: 8em 0 0 8em;
-    font-size: 4em;
-    color: cyan; }
-
-h1, h2 {
+h3 {
   font-family: 'Jean Luc';
-  color: blue; }
-  h1:hover, h2:hover {
+  color: blue;
+  font-size: 4em;
+  letter-spacing: 0.1em;
+  margin-bottom: 0; }
+
+.description {
+  font-family: 'Helvetica', sans-serif;
+  color: blue;
+  font-size: 1.1em;
+  text-align: justify;
+  max-width: 70%;
+  margin-bottom: 6em; }
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 4em; }
+
+.social-links .fa-soundcloud {
+  position: absolute;
+  font-size: 5em;
+  color: orange; }
+  .social-links .fa-soundcloud:hover {
     color: #00b386; }
+.social-links .fa-twitter {
+  position: absolute;
+  font-size: 4em;
+  color: #00cccc; }
+  .social-links .fa-twitter:hover {
+    color: #00b386; }
+.social-links .fa-envelope {
+  position: absolute;
+  font-size: 4em;
+  color: orangered; }
+  .social-links .fa-envelope:hover {
+    color: #00b386; }
+.social-links .bandcamp {
+  position: absolute;
+  height: 50px; }
 
 .visible {
+  font-family: 'Jean Luc';
+  color: blue;
   font-size: 3em;
-  letter-spacing: .5em; }
+  text-align: center;
+  margin-left: -10em;
+  letter-spacing: .5em;
+  margin-bottom: -0.5em; }
   .visible:hover {
+    color: #00b386;
     -ms-transform: skewX(45deg);
     -webkit-transform: skewX(45deg);
     transform: skewX(45deg); }
 
 .cloaks {
+  font-family: 'Jean Luc';
+  color: blue;
   font-size: 8em;
+  text-align: center;
   letter-spacing: 0.5em;
-  margin-left: 5em; }
+  margin-left: 3em;
+  margin-bottom: 0.75em; }
   .cloaks:hover {
+    color: #00b386;
     -ms-transform: skewX(-45deg);
     -webkit-transform: skewX(-45deg);
     transform: skewX(-45deg); }
 
-a {
-  text-decoration: none;
-  color: blue; }
-  a:hover {
-    color: #00b386; }
+.divider {
+  margin: 0 auto;
+  width: 80%;
+  background: white;
+  height: 5px; }
 
 .video-wrapper {
+  margin-top: 5em;
+  padding: 25px 0 56.25% 0;
   position: relative;
-  padding-bottom: 56.25%;
-  /* 16:9 */
-  padding-top: 25px;
   height: 0; }
-
-.video-wrapper object,
-.video-wrapper embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 /*# sourceMappingURL=main.css.map */
