@@ -44,24 +44,6 @@ html {
   }
 }
 
-// Scrollbar //
-
-// ::-webkit-scrollbar{
-//   width: 15px;
-// }
-
-// ::-webkit-scrollbar-track-piece{
-//   background-color: #3761ff;
-// }
-
-// ::-webkit-scrollbar-thumb{
-//   background-color: #0000cc;
-// }
-
-// ::-webkit-scrollbar-thumb:hover{
-//   background-color: orangered;
-// }
-
 @font-face {
     font-family: 'Jean Luc';
     src: url('../fonts/jeanlucweb-bold.otf');
@@ -176,10 +158,10 @@ h3 {
   }
   .fa-twitter {
     position: absolute;
-    top: 5em;
-    left: 2em;
-    font-size: 4em;
-    color: #80ffbf;
+    top: 3em;
+    left: 5em;
+    font-size: 3em;
+    color: #00e699;
     &:hover {
     color: #00b386;
     -webkit-animation: wiggle 0.5s infinite;
@@ -189,7 +171,7 @@ h3 {
     position: absolute;
     font-size: 2em;
     color: white;
-    left: 38em;
+    left: 40em;
     top: 4em;
     &:hover {
     animation: bounce 1s;
@@ -198,8 +180,8 @@ h3 {
   .bandcamp {
   position: absolute;
   height: 50px;
-  top: 12em;
-  left: 27em;
+  top: 19em;
+  left: 25em;
   transition-duration: 7s;
     &:hover {
       transform: rotate(720deg);
@@ -233,14 +215,11 @@ h3 {
   letter-spacing: 0.5em;
   margin-left: 3em;
   margin-bottom: 0.75em;
+  &:hover {
+  color: #00b386;
   -ms-transform: skewX(-45deg);
   -webkit-transform: skewX(-45deg);
   transform: skewX(-45deg);
-  &:hover {
-  color: #00b386;
-  -ms-transform: skewX(0deg);
-  -webkit-transform: skewX(0deg);
-  transform: skewX(0deg);
   transition: all 1.5s linear;
   }
 }
