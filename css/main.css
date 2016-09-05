@@ -1,62 +1,154 @@
 html {
   box-sizing: border-box;
+  position: relative;
+  min-height: 100%;
   overflow-x: hidden; }
 
-*, *::before, *::after {
-  box-sizing: inherit; }
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
+@-ms-viewport {
+  width: device-width; }
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); } }
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(6deg); }
+  50% {
+    -webkit-transform: rotate(-6deg); }
+  100% {
+    -webkit-transform: rotate(6deg); } }
 @font-face {
   font-family: 'Jean Luc';
   src: url("../fonts/jeanlucweb-bold.otf");
   font-weight: normal; }
 body {
-  background: RoyalBlue; }
+  background: #3761ff;
+  margin: 0 auto; }
 
 h3 {
   font-family: 'Jean Luc';
-  color: blue;
+  color: #0000cc;
   font-size: 4em;
   letter-spacing: 0.1em;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding-right: 0.75em; }
+  h3:hover {
+    -ms-transform: skewX(-30deg);
+    -webkit-transform: skewX(-30deg);
+    transform: skewX(-30deg);
+    transition: all 1.5s linear; }
 
 .description {
   font-family: 'Helvetica', sans-serif;
-  color: blue;
+  color: #0000cc;
   font-size: 1.1em;
-  text-align: justify;
   max-width: 70%;
-  margin-bottom: 6em; }
+  margin-bottom: 6em;
+  line-height: 1.5em; }
+  .description .fa-long-arrow-right {
+    color: #0000cc; }
+    .description .fa-long-arrow-right:hover {
+      color: orangered; }
+  .description .artist-link {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #0000cc;
+    font-weight: bold; }
+    .description .artist-link:hover {
+      color: orangered; }
+
+.video-description {
+  font-family: 'Helvetica', sans-serif;
+  color: #0000cc;
+  font-size: 1.1em;
+  max-width: 70%;
+  line-height: 1.5em;
+  text-align: justify; }
+
+.download {
+  display: flex;
+  align-items: center; }
+  .download p {
+    font-family: 'Helvetica', sans-serif;
+    color: #0000cc;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-right: 0.75em; }
 
 .container {
   width: 80%;
   margin: 0 auto;
   margin-top: 4em; }
 
+.video-info {
+  width: 85%;
+  margin: 0 auto; }
+
+.hero {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; }
+
+.video-page {
+  width: 100%; }
+
 .social-links .fa-soundcloud {
   position: absolute;
   font-size: 5em;
-  color: orange; }
+  color: peru;
+  left: 10.5em; }
   .social-links .fa-soundcloud:hover {
-    color: #00b386; }
+    color: orange;
+    -ms-transform: translate(100px, 0);
+    /* IE 9 */
+    -webkit-transform: translate(100px, 0);
+    /* Safari */
+    transform: translate(100px, 0);
+    transition: all 1.5s linear; }
 .social-links .fa-twitter {
   position: absolute;
+  top: 5em;
+  left: 2em;
   font-size: 4em;
-  color: #00cccc; }
+  color: #80ffbf; }
   .social-links .fa-twitter:hover {
-    color: #00b386; }
+    color: #00b386;
+    -webkit-animation: wiggle 0.5s infinite; }
 .social-links .fa-envelope {
   position: absolute;
-  font-size: 4em;
-  color: orangered; }
+  font-size: 2em;
+  color: white;
+  left: 38em;
+  top: 4em; }
   .social-links .fa-envelope:hover {
-    color: #00b386; }
+    animation: bounce 1s; }
 .social-links .bandcamp {
   position: absolute;
-  height: 50px; }
+  height: 50px;
+  top: 12em;
+  left: 27em;
+  transition-duration: 7s; }
+  .social-links .bandcamp:hover {
+    transform: rotate(720deg); }
 
 .visible {
   font-family: 'Jean Luc';
-  color: blue;
+  color: #0000cc;
   font-size: 3em;
   text-align: center;
   margin-left: -10em;
@@ -66,31 +158,30 @@ h3 {
     color: #00b386;
     -ms-transform: skewX(45deg);
     -webkit-transform: skewX(45deg);
-    transform: skewX(45deg); }
+    transform: skewX(45deg);
+    transition: all 1.5s linear; }
 
 .cloaks {
   font-family: 'Jean Luc';
-  color: blue;
+  color: #0000cc;
   font-size: 8em;
   text-align: center;
   letter-spacing: 0.5em;
   margin-left: 3em;
-  margin-bottom: 0.75em; }
+  margin-bottom: 0.75em;
+  -ms-transform: skewX(-45deg);
+  -webkit-transform: skewX(-45deg);
+  transform: skewX(-45deg); }
   .cloaks:hover {
     color: #00b386;
-    -ms-transform: skewX(-45deg);
-    -webkit-transform: skewX(-45deg);
-    transform: skewX(-45deg); }
-
-.divider {
-  margin: 0 auto;
-  width: 80%;
-  background: white;
-  height: 5px; }
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+    transition: all 1.5s linear; }
 
 .video-wrapper {
   margin-top: 5em;
-  padding: 25px 0 56.25% 0;
+  padding: 0 0 56.25% 0;
   position: relative;
   height: 0; }
   .video-wrapper iframe {
@@ -99,5 +190,22 @@ h3 {
     left: 0;
     width: 100%;
     height: 100%; }
+
+button {
+  margin: 0 auto;
+  display: block;
+  background: orangered;
+  font-size: 1em;
+  color: #3761ff;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 10px 15px;
+  border: none;
+  margin: 1em 0.5em; }
+  button:hover {
+    background: #0000cc; }
+
+a {
+  text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */

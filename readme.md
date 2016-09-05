@@ -1,8 +1,8 @@
 # Visible Cloaks
 
-August 28, 2016
+September 5, 2016
 
-##### By Molly Curtin &amp; Ryan Carlile
+##### By Molly Curtin
 
 ### Description
 
@@ -13,6 +13,7 @@ A landing page for the band Visible Cloaks.
 * SCSS
 * HTML
 * Sketch
+* Adobe Illustrator CC
 * Font Awesome
 * Git
 
@@ -20,4 +21,4 @@ A landing page for the band Visible Cloaks.
 
 *All rights reserved.*
 
-&copy; 2016 **Molly Curtin &amp; Ryan Carlile**
+&copy; 2016 **Molly Curtin**
