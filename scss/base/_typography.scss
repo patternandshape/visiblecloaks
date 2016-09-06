@@ -15,4 +15,7 @@ h3 {
     transform: skewX(-30deg);
     transition: all 1.5s linear;
   }
+  @media #{$mobile} {
+    font-size: 3em;
+  }
 }

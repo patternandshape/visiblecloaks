@@ -55,6 +55,10 @@ a {
     width: 90%;
     font-size: 1.5em; 
   }
+  @media #{$mobile} {
+    font-size: 1em;
+    text-align: left;
+  }
 }
 
 .video-wrapper {

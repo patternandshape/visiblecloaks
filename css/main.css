@@ -397,6 +397,10 @@ a {
     .description {
       width: 90%;
       font-size: 1.5em; } }
+  @media (min-width: 320px) and (max-width: 426px) {
+    .description {
+      font-size: 1em;
+      text-align: left; } }
 
 .video-wrapper {
   margin-top: 8em;
@@ -430,6 +434,9 @@ h3 {
     -webkit-transform: skewX(-30deg);
     transform: skewX(-30deg);
     transition: all 1.5s linear; }
+  @media (min-width: 320px) and (max-width: 426px) {
+    h3 {
+      font-size: 3em; } }
 
 @keyframes bounce {
   0%, 20%, 60%, 100% {
@@ -468,6 +475,10 @@ h3 {
     .social-links .fa-soundcloud {
       left: 6em;
       top: 0.25em; } }
+  @media (min-width: 320px) and (max-width: 426px) {
+    .social-links .fa-soundcloud {
+      font-size: 3em;
+      left: 5.5em; } }
 .social-links .fa-twitter {
   position: absolute;
   top: 3em;
@@ -483,6 +494,11 @@ h3 {
   @media (max-width: 850px) {
     .social-links .fa-twitter {
       left: 1em; } }
+  @media (min-width: 320px) and (max-width: 426px) {
+    .social-links .fa-twitter {
+      font-size: 2em;
+      top: 2.5em;
+      left: 0.75em; } }
 .social-links .fa-envelope {
   position: absolute;
   font-size: 2em;
@@ -498,6 +514,11 @@ h3 {
     .social-links .fa-envelope {
       left: 21em;
       top: 4em; } }
+  @media (min-width: 320px) and (max-width: 426px) {
+    .social-links .fa-envelope {
+      font-size: 1.5em;
+      left: 13.5em;
+      top: 3em; } }
 .social-links .bandcamp {
   position: absolute;
   height: 50px;
@@ -514,6 +535,11 @@ h3 {
     .social-links .bandcamp {
       left: -2em;
       top: 17em; } }
+  @media (min-width: 320px) and (max-width: 426px) {
+    .social-links .bandcamp {
+      height: 25px;
+      left: -3.5em;
+      top: 11em; } }
 
 .visible {
   font-family: "Jean Luc", sans-serif;
@@ -531,6 +557,11 @@ h3 {
   @media (max-width: 850px) {
     .visible {
       margin-left: -3em; } }
+  @media (min-width: 320px) and (max-width: 426px) {
+    .visible {
+      margin-left: -2em;
+      font-size: 1.75em;
+      margin-top: -0.5em; } }
 
 .cloaks {
   font-family: "Jean Luc", sans-serif;
@@ -551,6 +582,11 @@ h3 {
   @media (max-width: 850px) {
     .cloaks {
       font-size: 6em; } }
+  @media (min-width: 320px) and (max-width: 426px) {
+    .cloaks {
+      font-size: 2.75em;
+      margin-left: 1.5em;
+      margin-top: 1em; } }
 
 .video-wrapper {
   margin-top: 8em;
