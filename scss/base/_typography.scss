@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// Basic typography style for copy text
+// -----------------------------------------------------------------------------
+
+h3 {
+  font-family: 'Jean Luc';
+  color: $klein-blue;
+  font-size: 4em;
+  letter-spacing: 0.1em;
+  margin: 0.4em 0 0;
+  padding-right: 0.75em;
+  &:hover {
+    -ms-transform: skewX(-30deg);
+    -webkit-transform: skewX(-30deg);
+    transform: skewX(-30deg);
+    transition: all 1.5s linear;
+  }
+}

@@ -1,0 +1,65 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+html {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+body {
+  background: $electric-cornflower;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 4em auto 0;
+}
+
+.description {
+  font-family: 'Helvetica', sans-serif;
+  color: $klein-blue;
+  font-size: 1.1em;
+  max-width: 70%;
+  margin-bottom: 4em;
+  line-height: 1.5em;
+  text-align: justify;
+  .fa-long-arrow-right {
+    color: $klein-blue;
+    &:hover {
+      color: orangered;
+    } 
+  }
+}
+
+.video-wrapper {
+  margin-top: 8em;
+  padding: 0 0 56.25% 0;
+  position: relative;
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

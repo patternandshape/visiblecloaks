@@ -1,0 +1,26 @@
+///Colors
+
+$electric-cornflower: #325bff;
+$klein-blue: #0000cc;
+$pea-green: #00b386;
+
+///Color variables
+
+$link-green: $pea-green;
+
+
+
+/// Fonts
+
+$mont-reg-stack: 'Montserrat Regular', sans-serif;
+$mont-light-stack: 'Montserrat Light', sans-serif;
+
+
+/// Breakpoints
+
+  $mobile: '(min-width: 320px) and (max-width: 426px)';
+
+  $tablet: '(max-width: 850px)';
+  $laptop: '(max-width: 1100px)';
+  $desktop: '(min-width: 1725px)';
+
