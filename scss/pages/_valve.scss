@@ -24,6 +24,7 @@ button {
 
 img {
   width:28%;
+  margin-top:-1em;
   &:hover{
     -ms-transform: translate(100px, 0); /* IE 9 */
     -webkit-transform: translate(100px, 0); /* Safari */
