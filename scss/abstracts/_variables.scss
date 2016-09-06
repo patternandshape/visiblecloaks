@@ -12,15 +12,13 @@ $link-green: $pea-green;
 
 /// Fonts
 
-$mont-reg-stack: 'Montserrat Regular', sans-serif;
-$mont-light-stack: 'Montserrat Light', sans-serif;
+$jeanluc: 'Jean Luc', sans-serif;
+$helv: 'Helvetica', sans-serif;
 
 
 /// Breakpoints
 
-  $mobile: '(min-width: 320px) and (max-width: 426px)';
-
-  $tablet: '(max-width: 850px)';
-  $laptop: '(max-width: 1100px)';
-  $desktop: '(min-width: 1725px)';
+$mobile: '(min-width: 320px) and (max-width: 426px)';
+$tablet: '(max-width: 850px)';
+$laptop: '(max-width: 1100px)';
 

@@ -377,12 +377,15 @@ a {
 .container {
   width: 80%;
   margin: 4em auto 0; }
+  @media (max-width: 850px) {
+    .container {
+      width: 80%; } }
 
 .description {
-  font-family: 'Helvetica', sans-serif;
+  font-family: "Helvetica", sans-serif;
   color: #0000cc;
   font-size: 1.1em;
-  max-width: 70%;
+  width: 70%;
   margin-bottom: 4em;
   line-height: 1.5em;
   text-align: justify; }
@@ -390,6 +393,10 @@ a {
     color: #0000cc; }
     .description .fa-long-arrow-right:hover {
       color: orangered; }
+  @media (max-width: 850px) {
+    .description {
+      width: 90%;
+      font-size: 1.5em; } }
 
 .video-wrapper {
   margin-top: 8em;
@@ -402,13 +409,17 @@ a {
     left: 0;
     width: 100%;
     height: 100%; }
+  @media (max-width: 850px) {
+    .video-wrapper {
+      margin: 0 auto;
+      width: 100%; } }
 
 @font-face {
   font-family: 'Jean Luc';
   src: url("../fonts/jeanlucweb-bold.otf");
   font-weight: normal; }
 h3 {
-  font-family: 'Jean Luc';
+  font-family: "Jean Luc", sans-serif;
   color: #0000cc;
   font-size: 4em;
   letter-spacing: 0.1em;
@@ -450,6 +461,13 @@ h3 {
     /* Safari */
     transform: translate(100px, 0);
     transition: all 1.5s linear; }
+  @media (max-width: 1100px) {
+    .social-links .fa-soundcloud {
+      left: 7em; } }
+  @media (max-width: 850px) {
+    .social-links .fa-soundcloud {
+      left: 6em;
+      top: 0.25em; } }
 .social-links .fa-twitter {
   position: absolute;
   top: 3em;
@@ -459,25 +477,46 @@ h3 {
   .social-links .fa-twitter:hover {
     color: #00b386;
     -webkit-animation: wiggle 0.5s infinite; }
+  @media (max-width: 1100px) {
+    .social-links .fa-twitter {
+      left: 2em; } }
+  @media (max-width: 850px) {
+    .social-links .fa-twitter {
+      left: 1em; } }
 .social-links .fa-envelope {
   position: absolute;
   font-size: 2em;
   color: white;
-  left: 37em;
+  left: 34em;
   top: 4em; }
   .social-links .fa-envelope:hover {
     animation: bounce 1s; }
+  @media (max-width: 1100px) {
+    .social-links .fa-envelope {
+      left: 25em; } }
+  @media (max-width: 850px) {
+    .social-links .fa-envelope {
+      left: 21em;
+      top: 4em; } }
 .social-links .bandcamp {
   position: absolute;
   height: 50px;
-  top: 12em;
-  left: 14em;
+  top: 14em;
+  left: 10em;
   transition-duration: 7s; }
   .social-links .bandcamp:hover {
     transform: rotate(720deg); }
+  @media (max-width: 1100px) {
+    .social-links .bandcamp {
+      left: 0;
+      top: 16em; } }
+  @media (max-width: 850px) {
+    .social-links .bandcamp {
+      left: -2em;
+      top: 17em; } }
 
 .visible {
-  font-family: 'Jean Luc';
+  font-family: "Jean Luc", sans-serif;
   color: #0000cc;
   font-size: 3em;
   text-align: center;
@@ -489,20 +528,44 @@ h3 {
     -webkit-transform: skewX(45deg);
     transform: skewX(45deg);
     transition: all 1.5s linear; }
+  @media (max-width: 850px) {
+    .visible {
+      margin-left: -3em; } }
 
 .cloaks {
-  font-family: 'Jean Luc';
+  font-family: "Jean Luc", sans-serif;
   color: #0000cc;
   font-size: 8em;
   text-align: center;
   letter-spacing: 0.5em;
-  margin-left: 3em; }
+  margin-left: 2em; }
   .cloaks:hover {
     color: #00b386;
     -ms-transform: skewX(-45deg);
     -webkit-transform: skewX(-45deg);
     transform: skewX(-45deg);
     transition: all 1.5s linear; }
+  @media (max-width: 1100px) {
+    .cloaks {
+      margin-left: 1em; } }
+  @media (max-width: 850px) {
+    .cloaks {
+      font-size: 6em; } }
+
+.video-wrapper {
+  margin-top: 8em;
+  padding: 0 0 56.25% 0;
+  position: relative;
+  height: 0; }
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  @media (max-width: 850px) {
+    .video-wrapper {
+      margin: 0 auto; } }
 
 button {
   height: 2.7em;
@@ -516,6 +579,11 @@ button {
   margin: 1em 0.5em; }
   button:hover {
     background: #0000cc; }
+  @media (min-width: 320px) and (max-width: 426px) {
+    button {
+      height: 3em;
+      width: 14em;
+      font-size: 1em; } }
 
 img {
   width: 28%;
@@ -527,20 +595,47 @@ img {
     /* Safari */
     transform: translate(100px, 0);
     transition: all 1.5s linear; }
+  @media (max-width: 1100px) {
+    img {
+      width: 35%;
+      margin: 0; } }
+  @media (max-width: 850px) {
+    img {
+      width: 45%;
+      margin-top: 2em; } }
+  @media (min-width: 320px) and (max-width: 426px) {
+    img {
+      width: 65%;
+      margin-top: -2em; } }
 
 .video-page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70%;
+  width: 100%;
   margin: 4em auto 0; }
   .video-page p {
     text-align: center;
     font-size: 1em;
-    max-width: 38%; }
+    width: 33%; }
+    @media (max-width: 1100px) {
+      .video-page p {
+        width: 50%; } }
+    @media (max-width: 850px) {
+      .video-page p {
+        width: 65%; } }
+    @media (min-width: 320px) and (max-width: 426px) {
+      .video-page p {
+        width: 80%; } }
   .video-page h3 {
     padding: 0;
     font-size: 3em; }
+
+@media (min-width: 320px) and (max-width: 426px) {
+  .button-time {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em; } }
 
 .video-description {
   color: #0000cc;
@@ -551,6 +646,9 @@ img {
     font-weight: bold; }
     .video-description .artist-link:hover {
       color: orangered; }
+    @media (min-width: 320px) and (max-width: 426px) {
+      .video-description .artist-link {
+        padding-bottom: 3em; } }
 
 .download p {
   font-size: 1.5em;

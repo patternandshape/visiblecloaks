@@ -32,13 +32,16 @@ a {
 .container {
   width: 80%;
   margin: 4em auto 0;
+  @media #{$tablet} {
+    width: 80%;
+  }
 }
 
 .description {
-  font-family: 'Helvetica', sans-serif;
+  font-family: $helv;
   color: $klein-blue;
   font-size: 1.1em;
-  max-width: 70%;
+  width: 70%;
   margin-bottom: 4em;
   line-height: 1.5em;
   text-align: justify;
@@ -47,6 +50,10 @@ a {
     &:hover {
       color: orangered;
     } 
+  }
+  @media #{$tablet} {
+    width: 90%;
+    font-size: 1.5em; 
   }
 }
 
@@ -61,5 +68,9 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+  @media #{$tablet} {
+    margin: 0 auto;
+    width: 100%; 
   }
 }

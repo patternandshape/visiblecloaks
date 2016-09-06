@@ -42,6 +42,13 @@
       transform: translate(100px, 0);
       transition: all 1.5s linear;
     }
+    @media #{$laptop} {
+      left: 7em;
+    }
+    @media #{$tablet} {
+      left: 6em;
+      top: 0.25em;
+    }
   }
   .fa-twitter {
     position: absolute;
@@ -53,25 +60,46 @@
       color: $link-green;
       -webkit-animation: wiggle 0.5s infinite;
     } 
+    @media #{$laptop} {
+      left: 2em;
+    }
+    @media #{$tablet} {
+      left: 1em;
+    }
   }
   .fa-envelope {
     position: absolute;
     font-size: 2em;
     color: white;
-    left: 37em;
+    left: 34em;
     top: 4em;
     &:hover {
       animation: bounce 1s;
+    }
+    @media #{$laptop} {
+      left: 25em;
+    }
+    @media #{$tablet} {
+      left: 21em;
+      top: 4em;
     }
   }
   .bandcamp {
     position: absolute;
     height: 50px;
-    top: 12em;
-    left: 14em;
+    top: 14em;
+    left: 10em;
     transition-duration: 7s;
     &:hover {
       transform: rotate(720deg);
+    }
+    @media #{$laptop} {
+      left: 0;
+      top: 16em;
+    }
+    @media #{$tablet} {
+      left: -2em;
+      top: 17em;
     }
   }
 }

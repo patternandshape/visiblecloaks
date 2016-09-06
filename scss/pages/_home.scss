@@ -4,7 +4,7 @@
 
 
 .visible {
-  font-family: 'Jean Luc';
+  font-family: $jeanluc;
   color: $klein-blue;
   font-size: 3em;
   text-align: center;
@@ -17,21 +17,47 @@
     transform: skewX(45deg);
     transition: all 1.5s linear;
   }
+  @media #{$tablet} {
+    margin-left: -3em;
+  }
 }
 
 
 .cloaks {
-  font-family: 'Jean Luc';
+  font-family: $jeanluc;
   color: $klein-blue;
   font-size: 8em;
   text-align: center;
   letter-spacing: 0.5em;
-  margin-left: 3em;
+  margin-left: 2em;
   &:hover {
     color: $link-green;
     -ms-transform: skewX(-45deg);
     -webkit-transform: skewX(-45deg);
     transform: skewX(-45deg);
     transition: all 1.5s linear;
+  }
+  @media #{$laptop} {
+    margin-left: 1em;
+  }
+  @media #{$tablet} {
+    font-size: 6em;
+  }
+}
+
+.video-wrapper {
+  margin-top: 8em;
+  padding: 0 0 56.25% 0;
+  position: relative;
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  @media #{$tablet} {
+    margin:0 auto;
   }
 }
