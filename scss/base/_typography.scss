@@ -12,8 +12,11 @@ h3 {
   &:hover {
     -ms-transform: skewX(-30deg);
     -webkit-transform: skewX(-30deg);
+    -o-transform: skewX(-30deg);
     transform: skewX(-30deg);
     transition: all 1.5s linear;
+    -webkit-transition: all 1.5s linear;
+    -o-transition: all 1.5s linear;
   }
   @media #{$mobile} {
     font-size: 3em;

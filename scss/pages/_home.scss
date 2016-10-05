@@ -14,8 +14,11 @@
     color: $link-green;
     -ms-transform: skewX(45deg);
     -webkit-transform: skewX(45deg);
+    -o-transform: skewX(45deg);
     transform: skewX(45deg);
     transition: all 1.5s linear;
+    -webkit-transition: all 1.5s linear;
+    -o-transition: all 1.5s linear;
   }
   @media #{$tablet} {
     margin-left: -3em;
@@ -39,8 +42,11 @@
     color: $link-green;
     -ms-transform: skewX(-45deg);
     -webkit-transform: skewX(-45deg);
+    -o-transform: skewX(-45deg);
     transform: skewX(-45deg);
     transition: all 1.5s linear;
+    -webkit-transition: all 1.5s linear;
+    -o-transition: all 1.5s linear;
   }
   @media #{$laptop} {
     margin-left: 1em;

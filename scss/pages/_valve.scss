@@ -28,8 +28,11 @@ img {
   &:hover{
     -ms-transform: translate(100px, 0); /* IE 9 */
     -webkit-transform: translate(100px, 0); /* Safari */
+    -o-transform: translate(100px, 0);
     transform: translate(100px, 0);
     transition: all 1.5s linear;
+    -webkit-transition: all 1.5s linear;
+    -o-transition: all 1.5s linear;
   }
   @media #{$laptop} {
     width: 35%;

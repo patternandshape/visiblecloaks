@@ -431,8 +431,11 @@ h3 {
   h3:hover {
     -ms-transform: skewX(-30deg);
     -webkit-transform: skewX(-30deg);
+    -o-transform: skewX(-30deg);
     transform: skewX(-30deg);
-    transition: all 1.5s linear; }
+    transition: all 1.5s linear;
+    -webkit-transition: all 1.5s linear;
+    -o-transition: all 1.5s linear; }
   @media (min-width: 320px) and (max-width: 426px) {
     h3 {
       font-size: 3em; } }
@@ -440,20 +443,26 @@ h3 {
 @keyframes bounce {
   0%, 20%, 60%, 100% {
     -webkit-transform: translateY(0);
+    -o-transform: translateY(0);
     transform: translateY(0); }
   40% {
     -webkit-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
     transform: translateY(-20px); }
   80% {
     -webkit-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
     transform: translateY(-10px); } }
 @-webkit-keyframes wiggle {
   0% {
-    -webkit-transform: rotate(6deg); }
+    -webkit-transform: rotate(6deg);
+    -o-transform: rotate(6deg); }
   50% {
-    -webkit-transform: rotate(-6deg); }
+    -webkit-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg); }
   100% {
-    -webkit-transform: rotate(6deg); } }
+    -webkit-transform: rotate(6deg);
+    -o-transform: rotate(6deg); } }
 .social-links .fa-soundcloud {
   position: absolute;
   font-size: 5em;
@@ -466,7 +475,8 @@ h3 {
     -webkit-transform: translate(100px, 0);
     /* Safari */
     transform: translate(100px, 0);
-    transition: all 1.5s linear; }
+    transition: all 1.5s linear;
+    -webkit-transition: all 1.5s linear; }
   @media (max-width: 1100px) {
     .social-links .fa-soundcloud {
       left: 7em; } }
@@ -486,7 +496,8 @@ h3 {
   color: #00e699; }
   .social-links .fa-twitter:hover {
     color: #00b386;
-    -webkit-animation: wiggle 0.5s infinite; }
+    -webkit-animation: wiggle 0.5s infinite;
+    -o-animation: wiggle 0.5s infinite; }
   @media (max-width: 1100px) {
     .social-links .fa-twitter {
       left: 2em; } }
@@ -505,7 +516,9 @@ h3 {
   left: 34em;
   top: 4em; }
   .social-links .fa-envelope:hover {
-    animation: bounce 1s; }
+    animation: bounce 1s;
+    -o-animation: bounce 1s;
+    -webkit-animation: bounce 1s; }
   @media (max-width: 1100px) {
     .social-links .fa-envelope {
       left: 25em; } }
@@ -525,7 +538,9 @@ h3 {
   left: 10em;
   transition-duration: 7s; }
   .social-links .bandcamp:hover {
-    transform: rotate(720deg); }
+    transform: rotate(720deg);
+    -webkit-transform: rotate(720deg);
+    -o-transform: rotate(720deg); }
   @media (max-width: 1100px) {
     .social-links .bandcamp {
       left: 0;
@@ -551,8 +566,11 @@ h3 {
     color: #00b386;
     -ms-transform: skewX(45deg);
     -webkit-transform: skewX(45deg);
+    -o-transform: skewX(45deg);
     transform: skewX(45deg);
-    transition: all 1.5s linear; }
+    transition: all 1.5s linear;
+    -webkit-transition: all 1.5s linear;
+    -o-transition: all 1.5s linear; }
   @media (max-width: 850px) {
     .visible {
       margin-left: -3em; } }
@@ -573,8 +591,11 @@ h3 {
     color: #00b386;
     -ms-transform: skewX(-45deg);
     -webkit-transform: skewX(-45deg);
+    -o-transform: skewX(-45deg);
     transform: skewX(-45deg);
-    transition: all 1.5s linear; }
+    transition: all 1.5s linear;
+    -webkit-transition: all 1.5s linear;
+    -o-transition: all 1.5s linear; }
   @media (max-width: 1100px) {
     .cloaks {
       margin-left: 1em; } }
@@ -628,8 +649,11 @@ img {
     /* IE 9 */
     -webkit-transform: translate(100px, 0);
     /* Safari */
+    -o-transform: translate(100px, 0);
     transform: translate(100px, 0);
-    transition: all 1.5s linear; }
+    transition: all 1.5s linear;
+    -webkit-transition: all 1.5s linear;
+    -o-transition: all 1.5s linear; }
   @media (max-width: 1100px) {
     img {
       width: 35%;

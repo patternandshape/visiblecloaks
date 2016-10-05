@@ -5,14 +5,17 @@
 @keyframes bounce {
   0%, 20%, 60%, 100% {
     -webkit-transform: translateY(0);
+    -o-transform: translateY(0);
     transform: translateY(0);
   }
   40% {
     -webkit-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
     transform: translateY(-20px);
   }
   80% {
     -webkit-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
     transform: translateY(-10px);
   }
 }
@@ -20,12 +23,15 @@
 @-webkit-keyframes wiggle {
   0% {
   -webkit-transform:rotate(6deg);
+  -o-transform:rotate(6deg);
   }
   50% {
   -webkit-transform:rotate(-6deg);
+  -o-transform:rotate(-6deg);
   }
   100% {
   -webkit-transform:rotate(6deg);
+  -o-transform:rotate(6deg);
   }
 }
 
@@ -41,6 +47,7 @@
       -webkit-transform: translate(100px, 0); /* Safari */
       transform: translate(100px, 0);
       transition: all 1.5s linear;
+      -webkit-transition: all 1.5s linear;
     }
     @media #{$laptop} {
       left: 7em;
@@ -63,6 +70,7 @@
     &:hover {
       color: $link-green;
       -webkit-animation: wiggle 0.5s infinite;
+      -o-animation: wiggle 0.5s infinite;
     } 
     @media #{$laptop} {
       left: 2em;
@@ -84,6 +92,8 @@
     top: 4em;
     &:hover {
       animation: bounce 1s;
+      -o-animation: bounce 1s;
+      -webkit-animation: bounce 1s;
     }
     @media #{$laptop} {
       left: 25em;
@@ -106,6 +116,8 @@
     transition-duration: 7s;
     &:hover {
       transform: rotate(720deg);
+      -webkit-transform: rotate(720deg);
+      -o-transform: rotate(720deg);
     }
     @media #{$laptop} {
       left: 0;
