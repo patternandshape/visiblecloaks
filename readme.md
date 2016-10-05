@@ -8,6 +8,8 @@ October 5, 2016
 
 A landing page for the band Visible Cloaks.
 
+Visible Cloaks can be viewed at http://www.visiblecloaks.com
+
 ### Technologies Used
 
 * SCSS

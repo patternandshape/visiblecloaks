@@ -22,13 +22,9 @@ html {
   width: device-width;
 }
 
-// body {
-//   background: $electric-cornflower;
-// }
-
 a {
   text-decoration: none;
-  color: orangered;
+  color: $link-green;
 }
 
 .container {
