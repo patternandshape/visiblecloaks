@@ -555,6 +555,9 @@ h3 {
       left: -3.5em;
       top: 11em; } }
 
+.fa-long-arrow-left {
+  color: orangered; }
+
 .visible {
   font-family: "Jean Luc", sans-serif;
   color: #0000cc;
