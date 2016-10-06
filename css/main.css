@@ -371,7 +371,7 @@ html {
   width: device-width; }
 a {
   text-decoration: none;
-  color: #00b386; }
+  color: #00F000; }
 
 .container {
   width: 80%;
@@ -495,7 +495,7 @@ h3 {
   font-size: 3em;
   color: #00e699; }
   .social-links .fa-twitter:hover {
-    color: #00b386;
+    color: #00F000;
     -webkit-animation: wiggle 0.5s infinite;
     -o-animation: wiggle 0.5s infinite; }
   @media (max-width: 1100px) {
@@ -555,9 +555,6 @@ h3 {
       left: -3.5em;
       top: 11em; } }
 
-.fa-long-arrow-left {
-  color: orangered; }
-
 .visible {
   font-family: "Jean Luc", sans-serif;
   color: #0000cc;
@@ -566,7 +563,7 @@ h3 {
   letter-spacing: .5em;
   margin: 0 0 -0.5em -10em; }
   .visible:hover {
-    color: #00b386;
+    color: #00F000;
     -ms-transform: skewX(45deg);
     -webkit-transform: skewX(45deg);
     -o-transform: skewX(45deg);
@@ -591,7 +588,7 @@ h3 {
   letter-spacing: 0.5em;
   margin-left: 2em; }
   .cloaks:hover {
-    color: #00b386;
+    color: #00F000;
     -ms-transform: skewX(-45deg);
     -webkit-transform: skewX(-45deg);
     -o-transform: skewX(-45deg);
@@ -702,6 +699,12 @@ img {
 .video-description {
   color: #0000cc;
   line-height: 1.5em; }
+  .video-description .artist-home {
+    font-size: 1.2em;
+    color: #00F000;
+    font-weight: bold; }
+    .video-description .artist-home:hover {
+      color: #0000cc; }
   .video-description .artist-link {
     font-size: 1.2em;
     color: #0000cc;

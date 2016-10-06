@@ -85,6 +85,14 @@ img {
 .video-description {
   color: $klein-blue;
   line-height: 1.5em;
+  .artist-home {
+    font-size: 1.2em;
+    color: #00F000;
+    font-weight: bold;
+    &:hover {
+      color: $klein-blue;
+    }
+  }
   .artist-link {
     font-size: 1.2em;
     color: $klein-blue;
